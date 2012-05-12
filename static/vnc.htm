@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta charset="utf-8">
+<title>Runnting domU's</title>
+<script src="/static/vnc.js"></script>
+<body id=vnc style='margin:0px;' onLoad='javascript:setTimeout("wresize()", 500);'>
+<applet archive="/static/tightvnc-jviewer.jar" id=vncapp
+    code="com.glavsoft.viewer.Viewer" width="0" height="0">
+    <param name="Host" value="localhost" />
+    <param name="Port" value="%s" />
+    <!--param name="Password" value="" /-->
+    <param name="OpenNewWindow" value="no" />
+    <param name="ShowControls" value="yes" />
+    <param name="ViewOnly" value="no" />
+    <param name="AllowClipboardTransfer" value="yes" />
+    <param name="RemoteCharset" value="standard" />
+    <param name="ShareDesktop" value="yes" />
+    <param name="AllowCopyRect" value="yes" />
+    <param name="Encoding" value="Tight" />
+    <param name="CompressionLevel" value="" />
+    <param name="JpegImageQuality" value="" />
+    <param name="LocalPointer" value="On" />
+    <param name="ConvertToASCII" value="no" />
+    <param name="colorDepth" value="" />
+    <param name="ScalingFactor" value="100" />
+</applet>
+</body>
